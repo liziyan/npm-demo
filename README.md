@@ -143,7 +143,8 @@ Email: <你的注册邮箱>
 3.发布版本
 
 ```js
-npm publish lib
+yarn compile     <压缩代码>
+npm publish lib  <发布压缩后的lib文件>
 ```
 
 当当当，发布成功。接下来就可以执行`yarn add npm-react-demo`去安装使用了~
