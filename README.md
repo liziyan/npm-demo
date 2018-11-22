@@ -166,7 +166,7 @@ import {MyComponent} from 'npm-react-demo';
 
 1.每次publish，package.json里的version都要比前一次大，不然会报403错误
 
-2.常规的安装依赖，package.json里有`dependencies` 和 `devDependencies`，一定要将所有的依赖放在`devDependencies`里，不然publish使用者安装之后，会在npm-react-demo里多一个`node_modules`
+2.组件里使用的依赖，比如`moment`，引入的项目中如果没有安装这个，则会在npm-react-demo里多一个`node_modules`，所以尽量避免用项目里没有的依赖。
 
 3.如果npm使用的是淘宝镜像，可能会在adduser时登录不成功，解决方法：
 ```js
